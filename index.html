@@ -4,46 +4,77 @@
         <meta charset="UTF-8" />
         <title>تور بزرگ شیراز و کاشان</title>
         <style>
+            /* Reset settings */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            /* Header */
+            .header {
+                position: relative;
+                background: url(fin-kashan-1920.jpg) #cccccc center no-repeat;
+                width: 100%;
+                height: 657px;
+                text-align: center;
+            }
+            .logo {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+            }
+            .header_text {
+                color: white;
+                padding-top: 150px;
+                font-size: 28px;
+            }
+            /* menu */
             .menu-list {
-              list-style: none;
-              text-align: center;
+                padding-top: 50px;
+                list-style: none;                
             }
             .menu-list__item {
-              display: inline-block;
+                display: inline-block;
             }
-            /* Block Elemenet Modifier */
-            .menu-list__link { 
-              text-decoration: none;
-              border: 2px solid #b83b5e;
-              background-color: #f38181;
-              color: white;
-              padding: 10px;
-              border-radius: 3px;
+            .menu-list__link {
+                text-decoration: none;
+                border: 2px solid #b83b5e;
+                background-color: #f38181;
+                color: white;
+                padding: 10px;
+                border-radius: 3px;
             }
             .menu-list__link:hover {
-              color: #fce38a;
+                color: #fce38a;
             }
             .menu-list__link--active {
-              color: #fce38a;
+                color: #fce38a;
             }
         </style>
     </head>
     <body>
+        <div class="header">
+            <img src="iran-tour-logo.png" alt="logo" class="logo" />
+            <ul class="menu-list">
+                <li class="menu-list__item"><a class="menu-list__link" href="index.html">صفحه اصلی</a></li>
+                <li class="menu-list__item">
+                    <a class="menu-list__link menu-list__link--active" href="pages/about-us.html">درباره من</a>
+                </li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#itinerary">برنامه سفر</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#book">رزرو تور</a></li>
+            </ul>
+            <div class="header_text">
+                <h1>تور بزرگ شیراز و کاشان</h1>
+                <h2>ایران یعنی سفر در طول تاریخ</h2>
+            </div>
+        </div>
         <!-- menu -->
-        <ul class="menu-list">
-            <li class="menu-list__item" ><a class="menu-list__link" href="index.html">صفحه اصلی</a></li>
-            <li class="menu-list__item" ><a class="menu-list__link menu-list__link--active" href="pages/about-us.html">درباره من</a></li>
-            <li class="menu-list__item" ><a class="menu-list__link" href="#itinerary">برنامه سفر</a></li>
-            <li class="menu-list__item" ><a class="menu-list__link" href="#book">رزرو تور</a></li>
-        </ul>
-        <h1>تور بزرگ شیراز و کاشان</h1>
-        <h2>ایران یعنی سفر در طول تاریخ</h2>
+
         <img src="personal.png" width="200" height="200" alt="barnamenevisi" />
         <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
         <p>
-            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
-            گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری
-            و کلی طرح سفارش گرفته شده استفاده می نماید
+            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
+            ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
         </p>
         <h2>اطلاعات تماس</h2>
         <ul>
@@ -55,29 +86,21 @@
         <img src="takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" />
         <h3 id="itinerary">روز اول - تخت جمشید</h3>
         <p>
-            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
-            گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری
-            و کلی طرح سفارش گرفته شده استفاده می نماید
+            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
+            ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
         </p>
         <img src="fin-garden.png" width="300" height="300" alt="fin-garden" />
         <h3>روز دوم - باغ فین</h3>
         <p>
-            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
-            گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری
-            و کلی طرح سفارش گرفته شده استفاده می نماید
+            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
+            ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
         </p>
         <h4 id="book">برای رزرو تور فرم زیر را پر کنید</h4>
         <!-- start form -->
         <form action="" method="get">
             <p>
                 <label for="name">*نام</label>
-                <input
-                    id="name"
-                    type="text"
-                    placeholder="نام خود را وارد کنید"
-                    required
-                    name="name"
-                />
+                <input id="name" type="text" placeholder="نام خود را وارد کنید" required name="name" />
             </p>
             <p>
                 <label for="number">*شماره تلفن</label>
@@ -123,14 +146,10 @@
         <!-- End form -->
         <ul>
             <li>
-                <a target="_blank" href="https://www.youtube.com/user/salehimuhammad"
-                    >ورود به یوتیوب</a
-                >
+                <a target="_blank" href="https://www.youtube.com/user/salehimuhammad">ورود به یوتیوب</a>
             </li>
             <li>
-                <a target="_blank" href="https://www.instagram.com/barnamenevisi_com/"
-                    >ورود به اینستاگرام</a
-                >
+                <a target="_blank" href="https://www.instagram.com/barnamenevisi_com/">ورود به اینستاگرام</a>
             </li>
         </ul>
         <p>
