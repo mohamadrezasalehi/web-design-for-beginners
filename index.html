@@ -4,14 +4,17 @@
         <meta charset="UTF-8" />
         <title>تور بزرگ شیراز و کاشان</title>
         <style>
+            /* Variable */
+            :root {
+                --color-orange: #f38181;
+                --color-green: #eaffd0;
+            }
             /* Fonts */
             @font-face {
                 font-family: "yekan";
                 src: url("fonts/BYekan.eot");
-                src: url("webfont.eot?#iefix") format("embedded-opentype"), 
-                     url("fonts/BYekan.woff2") format("woff2"),
-                     url("fonts/BYekan.woff") format("woff"),
-                     url("fonts/Yekan.ttf") format("truetype");
+                src: url("webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BYekan.woff2") format("woff2"),
+                    url("fonts/BYekan.woff") format("woff"), url("fonts/Yekan.ttf") format("truetype");
             }
             /* Reset settings */
             * {
@@ -23,7 +26,7 @@
                 font-family: "yekan", calibri, tahoma, arial;
             }
             /* Header */
-            .header {
+            .header {               
                 position: relative;
                 background: url(images/fin-kashan-1920.jpg) #cccccc center no-repeat;
                 width: 100%;
@@ -36,9 +39,38 @@
                 left: 5%;
             }
             .header_text {
+                text-shadow: 4px 3px 5px rgb(0 0 0 / 73%); 
                 color: white;
                 padding-top: 150px;
                 font-size: 28px;
+            }
+            .cta {
+                background-color: var(--color-orange);
+                padding: 2px 8px 5px 8px;
+                border-radius: 5px;
+                color: var(--color-green);
+            }
+            .arrow-down {
+                position: absolute;
+                bottom: 5px;
+                right: 50%;
+                width: 60px;
+                height: 60px;
+                background-color: #333333;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .arrow-link {
+                position: relative;
+                top: 7px;
+                margin-top: 100px;
+                font-size: 35px;
+                text-decoration: none;
+                color: var(--color-orange);
+                transition: all 0.5s;
+            }
+            .arrow-link:hover {
+                color: var(--color-green);
             }
             /* menu */
             .menu-list {
@@ -77,96 +109,106 @@
             </ul>
             <div class="header_text">
                 <h1>تور بزرگ شیراز و کاشان</h1>
-                <h2>ایران یعنی سفر در طول تاریخ</h2>
+                <h2>ایران یعنی <span class="cta">سفر در طول تاریخ</span></h2>
+            </div>
+            <div class="arrow-down">
+                <a class="arrow-link" href="#about">&xdtri;</a>
             </div>
         </div>
         <!-- menu -->
+        <div id="about" class="about">
+            <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" />
+            <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
+            <p>
+                به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
+                عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
+            </p>
+            <h2>اطلاعات تماس</h2>
+            <ul>
+                <li>شیراز خیابان اول کوچه پنجم پلاک ۳</li>
+                <li>تلفن تماس : +98 912 222 22 22</li>
+                <li>تلفن همراه : +98 912 111 11 11</li>
+                <li>پست الکترونیکی :‌ info@example.com</li>
+            </ul>
+        </div>
+        <div class="itinerary">
+            <img src="images/takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" />
+            <h3 id="itinerary">روز اول - تخت جمشید</h3>
+            <p>
+                به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
+                عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
+            </p>
+            <img src="images/fin-garden.png" width="300" height="300" alt="fin-garden" />
+            <h3>روز دوم - باغ فین</h3>
+            <p>
+                به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
+                عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
+            </p>
+        </div>
+        <div class="book">
+            <h4 id="book">برای رزرو تور فرم زیر را پر کنید</h4>
+            <!-- start form -->
+            <form action="" method="get">
+                <p>
+                    <label for="name">*نام</label>
+                    <input id="name" type="text" placeholder="نام خود را وارد کنید" required name="name" />
+                </p>
+                <p>
+                    <label for="number">*شماره تلفن</label>
+                    <input id="number" type="number" placeholder="شماره تماس" required name="number" />
+                </p>
 
-        <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" />
-        <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
-        <p>
-            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
-            ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
-        </p>
-        <h2>اطلاعات تماس</h2>
-        <ul>
-            <li>شیراز خیابان اول کوچه پنجم پلاک ۳</li>
-            <li>تلفن تماس : +98 912 222 22 22</li>
-            <li>تلفن همراه : +98 912 111 11 11</li>
-            <li>پست الکترونیکی :‌ info@example.com</li>
-        </ul>
-        <img src="takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" />
-        <h3 id="itinerary">روز اول - تخت جمشید</h3>
-        <p>
-            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
-            ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
-        </p>
-        <img src="fin-garden.png" width="300" height="300" alt="fin-garden" />
-        <h3>روز دوم - باغ فین</h3>
-        <p>
-            به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از
-            ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
-        </p>
-        <h4 id="book">برای رزرو تور فرم زیر را پر کنید</h4>
-        <!-- start form -->
-        <form action="" method="get">
+                <p>
+                    <label for="email">*ایمیل</label>
+                    <input id="email" type="email" placeholder="ایمیل" required name="email" />
+                </p>
+                <p>
+                    <label for="fellowTraveler">من میخواهم برای کاهش هزینه با شخص دیگری سفر کنم</label>
+                    <input id="fellowTraveler" type="checkbox" name="fellowTraveler" />
+                </p>
+                <p>جنسیت</p>
+                <label for="man">مرد</label>
+                <input id="man" type="radio" name="gender" />
+                <label for="woman">زن</label>
+                <input id="woman" type="radio" name="gender" />
+                <p>
+                    <label for="date">تاریخ تور</label>
+                    <br />
+                    <select name="date" id="date">
+                        <option value="۱-۱۰">۱ دی</option>
+                        <option value="۱-۱۱">۱ بهمن</option>
+                        <option value="۱-۱۲">۱ اسفند</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="detail">توضیحات خود را وارد کنید</label>
+                    <br />
+                    <textarea name="detail" id="detail" placeholder="متن" cols="20" rows="4"></textarea>
+                </p>
+                <p>
+                    <label for="file">تصویر خود را آپلود کنید</label>
+                    <input type="file" name="file" />
+                </p>
+                <p>
+                    <input type="submit" value="ارسال" />
+                    <input type="reset" value="حذف" />
+                </p>
+            </form>
+            <!-- End form -->
+        </div>
+        <div class="footer">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/user/salehimuhammad">ورود به یوتیوب</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/barnamenevisi_com/">ورود به اینستاگرام</a>
+                </li>
+            </ul>
             <p>
-                <label for="name">*نام</label>
-                <input id="name" type="text" placeholder="نام خود را وارد کنید" required name="name" />
+                &copy; 2020
+                <a target="_blank" href="https://barnamenevisi.com">برنامه نویسی</a>
             </p>
-            <p>
-                <label for="number">*شماره تلفن</label>
-                <input id="number" type="number" placeholder="شماره تماس" required name="number" />
-            </p>
-
-            <p>
-                <label for="email">*ایمیل</label>
-                <input id="email" type="email" placeholder="ایمیل" required name="email" />
-            </p>
-            <p>
-                <label for="fellowTraveler">من میخواهم برای کاهش هزینه با شخص دیگری سفر کنم</label>
-                <input id="fellowTraveler" type="checkbox" name="fellowTraveler" />
-            </p>
-            <p>جنسیت</p>
-            <label for="man">مرد</label>
-            <input id="man" type="radio" name="gender" />
-            <label for="woman">زن</label>
-            <input id="woman" type="radio" name="gender" />
-            <p>
-                <label for="date">تاریخ تور</label>
-                <br />
-                <select name="date" id="date">
-                    <option value="۱-۱۰">۱ دی</option>
-                    <option value="۱-۱۱">۱ بهمن</option>
-                    <option value="۱-۱۲">۱ اسفند</option>
-                </select>
-            </p>
-            <p>
-                <label for="detail">توضیحات خود را وارد کنید</label>
-                <br />
-                <textarea name="detail" id="detail" placeholder="متن" cols="20" rows="4"></textarea>
-            </p>
-            <p>
-                <label for="file">تصویر خود را آپلود کنید</label>
-                <input type="file" name="file" />
-            </p>
-            <p>
-                <input type="submit" value="ارسال" />
-                <input type="reset" value="حذف" />
-            </p>
-        </form>
-        <!-- End form -->
-        <ul>
-            <li>
-                <a target="_blank" href="https://www.youtube.com/user/salehimuhammad">ورود به یوتیوب</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://www.instagram.com/barnamenevisi_com/">ورود به اینستاگرام</a>
-            </li>
-        </ul>
-        <p>
-            &copy; 2020
-            <a target="_blank" href="https://barnamenevisi.com">برنامه نویسی</a>
-        </p>
+        </div>
     </body>
 </html>
