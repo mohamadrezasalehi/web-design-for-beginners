@@ -12,9 +12,17 @@
             /* Fonts */
             @font-face {
                 font-family: "yekan";
-                src: url("fonts/BYekan.eot");
-                src: url("webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BYekan.woff2") format("woff2"),
-                    url("fonts/BYekan.woff") format("woff"), url("fonts/Yekan.ttf") format("truetype");
+                src: url("fonts/eot/BYekan.eot");
+                src: url("fonts/eot/BYekan.eot?#iefix") format("embedded-opentype"),
+                    url("fonts/woff2/BYekan.woff2") format("woff2"), url("fonts/woff/BYekan.woff") format("woff"),
+                    url("fonts/ttf/BYekan.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: "vazir";
+                src: url("fonts/eot/Vazir-Medium.eot");
+                src: url("fonts/eot/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+                    url("fonts/woff2/Vazir-Medium.woff2") format("woff2"), url("fonts/woff/Vazir-Medium.woff") format("woff"),
+                    url("fonts/ttf/Vazir-Medium.ttf") format("truetype");
             }
             /* Reset settings */
             * {
@@ -24,9 +32,15 @@
             }
             body {
                 font-family: "yekan", calibri, tahoma, arial;
+                color: #61666b;
+            }
+            .row {
+                max-width: 1020px;
+                margin: 0 auto;
+                padding: 30px;
             }
             /* Header */
-            .header {               
+            .header {
                 position: relative;
                 background: url(images/fin-kashan-1920.jpg) #cccccc center no-repeat;
                 width: 100%;
@@ -39,7 +53,7 @@
                 left: 5%;
             }
             .header_text {
-                text-shadow: 4px 3px 5px rgb(0 0 0 / 73%); 
+                text-shadow: 4px 3px 5px rgb(0 0 0 / 73%);
                 color: white;
                 padding-top: 150px;
                 font-size: 28px;
@@ -94,6 +108,25 @@
             .menu-list__link--active {
                 color: #fce38a;
             }
+            /* About */
+            .about {                
+                background-image: url(images/pattern.png);
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .about h3, .about h2 {
+                color: #f38181;
+            }
+            .about p, .about ul {
+                font-family: "vazir", "yekan", tahoma, arial;
+            }
+            .about ul {
+                list-style: none;
+            }
+            .itinerary-img {
+                float: left;
+                margin-right: 20px;
+            }
         </style>
     </head>
     <body>
@@ -117,19 +150,21 @@
         </div>
         <!-- menu -->
         <div id="about" class="about">
-            <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" />
-            <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
-            <p>
-                به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
-                عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
-            </p>
-            <h2>اطلاعات تماس</h2>
-            <ul>
-                <li>شیراز خیابان اول کوچه پنجم پلاک ۳</li>
-                <li>تلفن تماس : +98 912 222 22 22</li>
-                <li>تلفن همراه : +98 912 111 11 11</li>
-                <li>پست الکترونیکی :‌ info@example.com</li>
-            </ul>
+            <div class="row">
+                <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" class="itinerary-img" />
+                <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
+                <p>
+                    به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
+                    عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
+                </p>
+                <h2>اطلاعات تماس</h2>
+                <ul>
+                    <li>شیراز خیابان اول کوچه پنجم پلاک ۳</li>
+                    <li> تلفن تماس : <span dir="ltr">+98 912 111 11 11</span></li>
+                    <li>تلفن همراه : <span dir="ltr">+98 021 222222 22</span></li>
+                    <li>پست الکترونیکی :‌ info@example.com</li>
+                </ul>
+            </div>
         </div>
         <div class="itinerary">
             <img src="images/takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" />
