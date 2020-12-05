@@ -1,0 +1,147 @@
+/* Variable */
+:root {
+    --color-orange: #f38181;
+    --color-green: #eaffd0;
+}
+/* Fonts */
+@font-face {
+    font-family: "yekan";
+    src: url("../fonts/eot/BYekan.eot");
+    src: url("../fonts/eot/BYekan.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/BYekan.woff2") format("woff2"),
+        url("../fonts/woff/BYekan.woff") format("woff"), url("../fonts/ttf/BYekan.ttf") format("truetype");
+}
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/eot/Vazir-Medium.eot");
+    src: url("../fonts/eot/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/woff2/Vazir-Medium.woff2") format("woff2"), url("../fonts/woff/Vazir-Medium.woff") format("woff"),
+        url("../fonts/ttf/Vazir-Medium.ttf") format("truetype");
+}
+/* Reset settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Globa settings */
+body {
+    font-family: "yekan", calibri, tahoma, arial;
+    color: #61666b;
+}
+.row {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 30px;   
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix {
+    clear: both;
+    padding-top: 30px;
+}
+/* Header */
+.header {
+    position: relative;
+    background: url(../images/fin-kashan-1920.jpg) #cccccc center no-repeat;
+    width: 100%;
+    height: 657px;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.header_text {
+    text-shadow: 4px 3px 5px rgb(0 0 0 / 73%);
+    color: white;
+    padding-top: 150px;
+    font-size: 28px;
+}
+.cta {
+    background-color: var(--color-orange);
+    padding: 2px 8px 5px 8px;
+    border-radius: 5px;
+    color: var(--color-green);
+}
+.arrow-down {
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #333333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.arrow-link {
+    position: relative;
+    top: 7px;
+    margin-top: 100px;
+    font-size: 35px;
+    text-decoration: none;
+    color: var(--color-orange);
+    transition: all 0.5s;
+}
+.arrow-link:hover {
+    color: var(--color-green);
+}
+/* menu */
+.menu-list {
+    padding-top: 50px;
+    list-style: none;
+}
+.menu-list__item {
+    display: inline-block;
+}
+.menu-list__link {
+    text-decoration: none;
+    border: 2px solid #b83b5e;
+    background-color: #f38181;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+.menu-list__link:hover {
+    color: #fce38a;
+}
+.menu-list__link--active {
+    color: #fce38a;
+}
+/* About */
+.about {
+    background-image: url(../images/pattern.png);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.about h3,
+.about h2 {
+    color: #f38181;
+}
+.about p,
+.about ul {
+    font-family: "vazir", "yekan", tahoma, arial;
+}
+.about ul {
+    list-style: none;
+}
+.about-img {
+    float: left; 
+    margin-right: 20px;
+}
+/* Itinerary */
+.itinerary {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.itinerary-img1{
+    float: left;
+    margin-right: 20px;
+}
+.itinerary-img2 {
+    float: right;
+    margin-left: 20px;
+}

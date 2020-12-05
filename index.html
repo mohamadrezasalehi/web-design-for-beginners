@@ -3,131 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>تور بزرگ شیراز و کاشان</title>
-        <style>
-            /* Variable */
-            :root {
-                --color-orange: #f38181;
-                --color-green: #eaffd0;
-            }
-            /* Fonts */
-            @font-face {
-                font-family: "yekan";
-                src: url("fonts/eot/BYekan.eot");
-                src: url("fonts/eot/BYekan.eot?#iefix") format("embedded-opentype"),
-                    url("fonts/woff2/BYekan.woff2") format("woff2"), url("fonts/woff/BYekan.woff") format("woff"),
-                    url("fonts/ttf/BYekan.ttf") format("truetype");
-            }
-            @font-face {
-                font-family: "vazir";
-                src: url("fonts/eot/Vazir-Medium.eot");
-                src: url("fonts/eot/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
-                    url("fonts/woff2/Vazir-Medium.woff2") format("woff2"), url("fonts/woff/Vazir-Medium.woff") format("woff"),
-                    url("fonts/ttf/Vazir-Medium.ttf") format("truetype");
-            }
-            /* Reset settings */
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                font-family: "yekan", calibri, tahoma, arial;
-                color: #61666b;
-            }
-            .row {
-                max-width: 1020px;
-                margin: 0 auto;
-                padding: 30px;
-            }
-            /* Header */
-            .header {
-                position: relative;
-                background: url(images/fin-kashan-1920.jpg) #cccccc center no-repeat;
-                width: 100%;
-                height: 657px;
-                text-align: center;
-            }
-            .logo {
-                position: absolute;
-                top: 5%;
-                left: 5%;
-            }
-            .header_text {
-                text-shadow: 4px 3px 5px rgb(0 0 0 / 73%);
-                color: white;
-                padding-top: 150px;
-                font-size: 28px;
-            }
-            .cta {
-                background-color: var(--color-orange);
-                padding: 2px 8px 5px 8px;
-                border-radius: 5px;
-                color: var(--color-green);
-            }
-            .arrow-down {
-                position: absolute;
-                bottom: 5px;
-                right: 50%;
-                width: 60px;
-                height: 60px;
-                background-color: #333333;
-                border-radius: 50%;
-                cursor: pointer;
-            }
-            .arrow-link {
-                position: relative;
-                top: 7px;
-                margin-top: 100px;
-                font-size: 35px;
-                text-decoration: none;
-                color: var(--color-orange);
-                transition: all 0.5s;
-            }
-            .arrow-link:hover {
-                color: var(--color-green);
-            }
-            /* menu */
-            .menu-list {
-                padding-top: 50px;
-                list-style: none;
-            }
-            .menu-list__item {
-                display: inline-block;
-            }
-            .menu-list__link {
-                text-decoration: none;
-                border: 2px solid #b83b5e;
-                background-color: #f38181;
-                color: white;
-                padding: 10px;
-                border-radius: 3px;
-            }
-            .menu-list__link:hover {
-                color: #fce38a;
-            }
-            .menu-list__link--active {
-                color: #fce38a;
-            }
-            /* About */
-            .about {                
-                background-image: url(images/pattern.png);
-                padding-top: 70px;
-                padding-bottom: 70px;
-            }
-            .about h3, .about h2 {
-                color: #f38181;
-            }
-            .about p, .about ul {
-                font-family: "vazir", "yekan", tahoma, arial;
-            }
-            .about ul {
-                list-style: none;
-            }
-            .itinerary-img {
-                float: left;
-                margin-right: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="header">
@@ -151,7 +27,7 @@
         <!-- menu -->
         <div id="about" class="about">
             <div class="row">
-                <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" class="itinerary-img" />
+                <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" class="about-img" />
                 <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
                 <p>
                     به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
@@ -160,25 +36,29 @@
                 <h2>اطلاعات تماس</h2>
                 <ul>
                     <li>شیراز خیابان اول کوچه پنجم پلاک ۳</li>
-                    <li> تلفن تماس : <span dir="ltr">+98 912 111 11 11</span></li>
+                    <li>تلفن تماس : <span dir="ltr">+98 912 111 11 11</span></li>
                     <li>تلفن همراه : <span dir="ltr">+98 021 222222 22</span></li>
                     <li>پست الکترونیکی :‌ info@example.com</li>
                 </ul>
             </div>
         </div>
         <div class="itinerary">
-            <img src="images/takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" />
-            <h3 id="itinerary">روز اول - تخت جمشید</h3>
-            <p>
-                به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
-                عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
-            </p>
-            <img src="images/fin-garden.png" width="300" height="300" alt="fin-garden" />
-            <h3>روز دوم - باغ فین</h3>
-            <p>
-                به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
-                عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
-            </p>
+            <div class="row">
+                <img src="images/takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" class="itinerary-img1" />
+                <h3 id="itinerary">روز اول - تخت جمشید</h3>
+                <p>
+                    به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
+                    عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
+                </p>
+            </div>
+            <div class="row">
+                <img src="images/fin-garden.png" width="300" height="300" alt="fin-garden" class="itinerary-img2" />
+                <h3>روز دوم - باغ فین</h3>
+                <p>
+                    به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان
+                    عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
+                </p>
+            </div>
         </div>
         <div class="book">
             <h4 id="book">برای رزرو تور فرم زیر را پر کنید</h4>
