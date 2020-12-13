@@ -28,10 +28,17 @@ body {
     font-family: "yekan", calibri, tahoma, arial;
     color: #61666b;
 }
+a {
+    text-decoration: none;
+}
+a,
+p {
+    font-family: "vazir", "yekan", tahoma, arial;
+}
 .row {
     max-width: 1020px;
     margin: 0 auto;
-    padding: 30px;   
+    padding: 30px;
 }
 .row::after {
     content: "";
@@ -46,6 +53,7 @@ body {
 .header {
     position: relative;
     background: url(../images/fin-kashan-1920.jpg) #cccccc center no-repeat;
+    background-size: cover;
     width: 100%;
     height: 657px;
     text-align: center;
@@ -129,7 +137,7 @@ body {
     list-style: none;
 }
 .about-img {
-    float: left; 
+    float: left;
     margin-right: 20px;
 }
 /* Itinerary */
@@ -137,7 +145,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.itinerary-img1{
+.itinerary-img1 {
     float: left;
     margin-right: 20px;
 }
@@ -146,55 +154,57 @@ body {
     margin-left: 20px;
 }
 /* global form  */
-input, textarea, select {
+input,
+textarea,
+select {
     font-family: "vazir", "yekan", tahoma, arial;
 }
 .form-group {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .form-control {
-   display: block;
-   width: 100%;
-   border: 2px solid #cccccc;
-   padding: 8px;
-   line-height: 1.7;
-   border-radius: 5px;
-   transition: all .3s;
+    display: block;
+    width: 100%;
+    border: 2px solid #cccccc;
+    padding: 8px;
+    line-height: 1.7;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 .form-control:focus {
-   background-color: #ccc;
-   outline: 0;
-   border: 2px solid #82b8ff;
+    background-color: #ccc;
+    outline: 0;
+    border: 2px solid #82b8ff;
 }
 label {
-   margin-bottom: 2px;
-   display: inline-block;
+    margin-bottom: 2px;
+    display: inline-block;
 }
 .button {
-   padding: 7px 18px;
-   cursor: pointer;
-   background-color: #11abb0;
-   border: 0;
-   border-radius: 5px;
-   transition: .3s;
+    padding: 7px 18px;
+    cursor: pointer;
+    background-color: #11abb0;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 .button:hover {
-   background-color: #f38181;
+    background-color: #f38181;
 }
 .required {
-   color: #f30f0f;
-   font-size: 25px;
+    color: #f30f0f;
+    font-size: 25px;
 }
 .form-checkbox {
-   position: relative;
-   margin-bottom: 7px;
+    position: relative;
+    margin-bottom: 7px;
 }
 .input-checkbox {
-   position: absolute;
-   top: 6px;
+    position: absolute;
+    top: 6px;
 }
 .checkbox-label {
-   margin-right: 20px;
+    margin-right: 20px;
 }
 /* Book */
 .book {
@@ -209,4 +219,89 @@ label {
 .book-header {
     text-align: center;
     font-size: 22px;
+}
+/* Footer */
+.footer {
+    position: relative;
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 80px;
+}
+.footer__arrowup {
+    position: absolute;
+    top: -28px;
+    right: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #707070;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer__arrowlink {
+    position: relative;
+    top: 2px;
+    margin-top: 100px;
+    font-size: 35px;
+    text-decoration: none;
+    color: var(--color-orange);
+    transition: all 0.5s;
+}
+.footer__arrowlink:hover {
+    color: var(--color-green);
+}
+.footer__lists {
+    list-style: none;
+}
+.footer__list {
+    display: inline-block;
+}
+.footer__link {
+    color: #82b8ff;
+    transition: all 0.2s;
+    padding: 20px;
+}
+.footer__link:hover {
+    color: white;
+}
+.footer__copyright {
+    margin-top: 10px;
+    color: #cccccc;
+}
+.footer__link--copy {
+    padding-right: 5px;
+}
+/* Footer subscribe  */
+.footer__subscribe {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.footer__input{
+    background: none;
+    display: block;
+    color: #aaaaaa;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    direction: ltr;
+}
+.footer__button {
+    font-family: "vazir", "yekan", tahoma, arial;
+    background: #7f7f7f;
+    position: absolute;
+    height: 50px;
+    width: 80px;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.footer__input:focus {
+    outline: 0;
+}
+.footer__button:hover {
+    background-color: #707070;
 }

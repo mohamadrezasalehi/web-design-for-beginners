@@ -3,10 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <title>تور بزرگ شیراز و کاشان</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="header">
+        <header id="header" class="header">
             <img src="images/iran-tour-logo.png" alt="logo" class="logo" />
             <ul class="menu-list">
                 <li class="menu-list__item"><a class="menu-list__link" href="index.html">صفحه اصلی</a></li>
@@ -23,9 +40,9 @@
             <div class="arrow-down">
                 <a class="arrow-link" href="#about">&xdtri;</a>
             </div>
-        </div>
+        </header>
         <!-- menu -->
-        <div id="about" class="about">
+        <section id="about" class="about">
             <div class="row">
                 <img src="images/personal.png" width="200" height="200" alt="barnamenevisi" class="about-img" />
                 <h3>سلام من محمدرضا صالحی هستم تور لیدر شما</h3>
@@ -41,8 +58,8 @@
                     <li>پست الکترونیکی :‌ info@example.com</li>
                 </ul>
             </div>
-        </div>
-        <div class="itinerary">
+        </section>
+        <section class="itinerary">
             <div class="row">
                 <img src="images/takhte-jamshid.png" width="300" height="300" alt="takhte-jamshid" class="itinerary-img1" />
                 <h3 id="itinerary">روز اول - تخت جمشید</h3>
@@ -59,8 +76,8 @@
                     عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید
                 </p>
             </div>
-        </div>
-        <div class="book">
+        </section>
+        <section class="book">
             <div class="row">
                 <h4 class="book-header" id="book">برای رزرو تور فرم زیر را پر کنید</h4>
                 <!-- start form -->
@@ -90,8 +107,8 @@
                     </div>
                     <div class="form-group">
                         جنسیت
-                        <br>
-                        <label for="man" >مرد</label>
+                        <br />
+                        <label for="man">مرد</label>
                         <input id="man" type="radio" name="gender" />
                         <label for="woman">زن</label>
                         <input id="woman" type="radio" name="gender" />
@@ -121,20 +138,26 @@
                 </form>
                 <!-- End form -->
             </div>
-        </div>
-        <div class="footer">
-            <ul>
-                <li>
-                    <a target="_blank" href="https://www.youtube.com/user/salehimuhammad">ورود به یوتیوب</a>
+        </section>
+        <footer class="footer">
+            <div class="footer__arrowup">
+                <a class="footer__arrowlink" href="#header">&xutri;</a>
+            </div>  
+            <form class="footer__subscribe" action="#">
+                <input class="footer__input" type="text" placeholder="لطفا ایمیل خود را وارد نمایید">
+                <button class="footer__button">ارسال</button>
+            </form>                        
+            <ul class="footer__lists">
+                <li class="footer__list">
+                    <a class="footer__link" target="_blank" href="https://www.youtube.com/user/salehimuhammad">ورود به یوتیوب</a>
                 </li>
-                <li>
-                    <a target="_blank" href="https://www.instagram.com/barnamenevisi_com/">ورود به اینستاگرام</a>
+                <li class="footer__list">
+                    <a class="footer__link" target="_blank" href="https://www.instagram.com/barnamenevisi_com/">ورود به اینستاگرام</a>
                 </li>
             </ul>
-            <p>
-                &copy; 2020
-                <a target="_blank" href="https://barnamenevisi.com">برنامه نویسی</a>
+            <p class="footer__copyright">
+                2020 &copy;  ساخته شده با ❤ توسط وب سایت <a class="footer__link footer__link--copy" target="_blank" href="https://barnamenevisi.com">برنامه نویسی</a>
             </p>
-        </div>
+        </footer>
     </body>
 </html>
