@@ -1,20 +1,22 @@
 
-# web-design-for-beginners
-html و css آموزش بدون پیش نیاز  از صفر تا سطح متوسط
+# آموزش رایگان طراحی سایت پروژه محور
+آموزش طراحی سایت رایگان از پایه
+برای دانلود رایگان فیلم های آموزشی و طرح سوالات خود به وب سایت زیر مراجعه نمایید
 
-# web-design-for-beginners
-مراجعه کنید release برای دسترسی به فایل های آموزشی هر قسمت به قسمت
+https://barnamenevisi.com
 
-## پشتیبانی
+مشاهده نمونه قالب
 
-برای پشتیبانی می توانید از مسیرهای زیر اقدام کنید
+https://mohamadrezasalehi.github.io/web-design-for-beginners/
 
-- قسمت پرسش و پاسخ در وب سایت برنامه نویسی در زیر هر فیلم آموزشی سوالات خودتون رو بپرسید <a href="https://barnamenevisi.com" target="_blank">`barnamenevisi.com`</a>
-- از طریق کامنت در ایستاگرام اقدام کنید <a href="https://instagram.com/barnamenevisi_com" target="_blank">`@barnamenevisi_com`</a>
-- از طریق کامنت در یوتیوب اقدام کنید <a href="https://www.youtube.com/user/salehimuhammad" target="_blank">`@youtube`</a>
+## ارتباط با من
+- <a href="https://barnamenevisi.com" target="_blank">`barnamenevisi.com`</a>
+- ایستاگرام <a href="https://instagram.com/barnamenevisi_com" target="_blank">`@barnamenevisi_com`</a>
+- یوتیوب <a href="https://www.youtube.com/user/salehimuhammad" target="_blank">`@youtube`</a>
+
+مراجعه کنید release برای دسترسی به فایل های آموزشی هر قسمت به بخش
 
 ---
-
 
 ## License
 
